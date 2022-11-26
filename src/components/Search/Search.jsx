@@ -7,9 +7,16 @@ class Search extends React.Component {
     render(){
         return (
             <div className="search bg-header">
-                <Header/>
+                <section className='ajust-banner'>
+                    <section className='ajust-banner-filter'>
+                        <Header/>
+                    </section>
+                </section>
                 <Banner/>
-                <div className='conatiner left-ajust'>
+                <div className="container__navbar">
+                    <h3 className='title__section'>
+                        Viejas encontrados
+                    </h3>
                     <Cards/>
                 </div>
                 <Footer/>

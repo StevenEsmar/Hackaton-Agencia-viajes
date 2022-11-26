@@ -1,11 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Logo from '../../assets/logoGovass.png';
+import Cart from '../../assets/cart.png';
 
 class Header extends React.Component {
     render(){
         return (
-            <div className="container__navbar footer__color">
+            <div className="container__navbar">
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <img src={Logo} className="logo-govass" alt="Logo Go VASS">
                     </img>
@@ -26,7 +27,7 @@ class Header extends React.Component {
                         </li>
                         <li className="nav-item">
                             <div className='cart__style'>
-                            <Link className="nav-link " to="/carrito">car</Link>
+                            <Link className="nav-link " to="/carrito"><img src={Cart} className="logo__cart" alt="Logo carrito de compras"/></Link>
                             </div>
                         </li>
                         </ul>

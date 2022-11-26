@@ -16,7 +16,7 @@ class Footer extends React.Component {
                                 </img>
                             </div>
                             <div className="col-lg-5 col-md-6 mb-4 mb-md-0">
-                            <h5 className="text-black text-center">Redes sociales</h5>
+                            <h5 className="text-white text-center">Redes sociales</h5>
                             <ul className="social__footer mb-0 justify-content-evenly">
                                 <li>
                                 <a href="#!" className="text-white">
@@ -39,13 +39,13 @@ class Footer extends React.Component {
                             </ul>
                             </div>
                             <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <h5 className="mb-0 text-black text-center">Acerca de</h5>
+                            <h5 className="mb-0 text-white text-center">Acerca de</h5>
                             <ul className="list-unstyled">
                                 <li className="text-center">
-                                <a href="/quienesSomos" className="text-black text-center text-decoration-none">Quienes somos</a>
+                                <a href="/quienesSomos" className="text-white text-center text-decoration-none">Quienes somos</a>
                                 </li>
                                 <li className="text-center">
-                                <a href="/Contacto" className="text-black text-decoration-none">Contacto</a>
+                                <a href="/Contacto" className="text-white text-decoration-none">Contacto</a>
                                 </li>
                             </ul>
                             </div>

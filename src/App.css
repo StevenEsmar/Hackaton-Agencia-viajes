@@ -26,12 +26,23 @@ body {
     color: #3A0CA3;
     font-weight: 100;
     font-size: 15px;
+    font-family: 'Lexend', sans-serif;
 }
 
 .ajust-banner {
-    background-color: #3A0CA3;
-    padding-bottom: 10px;
+    background-color: #3a0ca3d1;
+    background-image: url("assets/imagenFondo.png");
+    background-size: contain;
+    background-repeat: round;
 }
+
+.ajust-banner-filter {
+    padding-bottom: 10px;
+    background-color: #3a0ca3d1;
+}
+
+
+/* Inicio de estilos para el background del header */
 
 .ajust-search {
     display: flex;
@@ -55,6 +66,7 @@ body {
     color: #3A0CA3;
     font-size: 15px;
     font-weight: bold;
+    font-family: 'Lexend', sans-serif;
 }
 
 .ajust-search .content {
@@ -69,6 +81,7 @@ body {
     color: #3A0CA3 !important;
     font-size: 15px;
     font-weight: bold;
+    font-family: 'Lexend', sans-serif;
 }
 
 .seacrh {
@@ -80,6 +93,7 @@ body {
     font-size: 23px;
     font-weight: bold;
     margin-bottom: 20px;
+    font-family: 'Lexend', sans-serif;
 }
 
 h1.content__test {
@@ -87,6 +101,7 @@ h1.content__test {
     font-size: 33px;
     font-weight: bold;
     margin-top: 40px;
+    font-family: 'Lexend', sans-serif;
 }
 
 .content__test {
@@ -97,6 +112,7 @@ p.content__test {
     color: #FCFBFF;
     font-size: 25px;
     font-weight: 100;
+    font-family: 'Lexend', sans-serif;
 }
 
 button.content__test {
@@ -108,6 +124,7 @@ button.content__test {
     border-radius: 20px;
     width: 30%;
     padding: 10px;
+    font-family: 'Lexend', sans-serif;
 }
 
 .seacrh1 {
@@ -120,25 +137,17 @@ button.content__test {
 
 /* Inicio de estilos para el background del header */
 
-.bg-header::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    background-image: url(http://localhost:3000/static/media/imagenFondo.e90c16add2626f0c6c99.png);
-    background-size: contain;
-    background-repeat: round;
-    z-index: -1;
-}
-
 
 /* Inicio de estilos para la barra de navegación */
 
 .logo-govass {
     width: 130px;
     margin: 15px;
+}
+
+.navbar {
+    width: 83%;
+    margin: auto;
 }
 
 .container__navbar {
@@ -165,7 +174,70 @@ button.content__test {
 .cart__style {
     background-color: #F72585;
     border-radius: 20px;
-    width: 44px;
+    width: 40px;
+    margin: auto;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.logo__cart {
+    height: 25px;
+    margin: auto;
+}
+
+.cart__style:hover {
+    background-color: #ef1d7c;
+}
+
+.nav-item {
+    margin: 0px 20px;
+}
+
+
+/* Inicio de estilos para la barra de navegación */
+
+.logo-govass {
+    width: 130px;
+    margin: 15px;
+}
+
+.navbar {
+    width: 83%;
+    margin: auto;
+}
+
+.container__navbar {
+    padding: 10px;
+}
+
+
+/* .navbar-toggler{
+    margin: 10px;
+} */
+
+.navbar-nav {
+    font-family: 'Lexend';
+}
+
+.nav-link {
+    color: #ffffffc7 !important;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+.cart__style {
+    background-color: #F72585;
+    border-radius: 20px;
+    width: 40px;
+    margin: auto;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.logo__cart {
+    height: 25px;
     margin: auto;
 }
 
@@ -204,6 +276,198 @@ button.content__test {
 
 .carousel-inner {
     height: 260px;
+}
+
+
+/* Inicio de estilos para cards*/
+
+.card {
+    background: linear-gradient(270deg, rgb(58 12 163 / 41%) 10%, #3A0CA3 56%);
+    margin: 10px;
+    border: none !important;
+    border-radius: 20px !important;
+    font-family: 'Lexend';
+}
+
+.card-img-top {
+    opacity: 0.3;
+    z-index: 0;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    height: 190px;
+}
+
+.card-text {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 0px;
+}
+
+.card__tour {
+    border-radius: 20px !important;
+}
+
+.card__footer {
+    height: 40px;
+    border-radius: 20px !important;
+}
+
+.button__cards {
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: #4361EE;
+    color: #fff;
+    font-family: 'Lexend';
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.button__cards:hover {
+    background-color: #274cf1;
+}
+
+.card-img-overlay {
+    max-height: 80%;
+}
+
+.description__tour {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__tittle {
+    margin-bottom: 20px;
+    font-size: 27px;
+}
+
+.date__tour {
+    display: flex;
+    align-items: center;
+}
+
+.card__day {
+    font-size: 40px;
+    margin: 3px;
+}
+
+.card__year p {
+    font-size: 10px;
+}
+
+.duration__tour {
+    display: flex;
+    align-items: end;
+}
+
+.icon__cards {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.title__section {
+    color: #3A0CA3;
+    font-family: "Lexend";
+}
+
+
+/* Inicio estilos para detalle del plan */
+
+.content__detail {
+    color: #fff;
+    width: 70%;
+    margin: auto;
+}
+
+.tips__tour {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.buttons__tour {
+    align-self: end;
+}
+
+.btn__buy {
+    margin: 5px;
+    background: #F72585;
+    border-radius: 15px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 4px 20px;
+    box-shadow: 0px 0px 13px #F72585;
+}
+
+.btn__buy:hover {
+    background: #ec1374;
+}
+
+.btn__add:hover {
+    background: rgba(228, 61, 94, 0.163);
+}
+
+.btn__add {
+    margin: 5px;
+    background: transparent;
+    border-radius: 15px;
+    color: #fff;
+    border: 2px solid #F72585;
+    cursor: pointer;
+    padding: 4px 20px;
+    box-shadow: 0px 0px 13px #F72585;
+}
+
+.detail__bg {
+    height: 300px;
+}
+
+.detail__bg::after {
+    height: 300px;
+}
+
+
+/* Inicio de estilos para formulario de compra */
+
+.bg__form {
+    display: flex;
+    margin-top: -100px;
+    width: 100%;
+}
+
+.container__form {
+    width: 60%;
+    padding-top: 100px;
+    background: linear-gradient(51.85deg, #3A0CA3 0%, #7209B7 82.46%, #4361EE 100%);
+}
+
+.container__form p {
+    font-family: 'Lexend';
+    font-size: 50px;
+    color: #fff;
+    margin: auto;
+    width: 50%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container__img {
+    width: 40%;
+    float: right;
+    overflow: hidden;
+}
+
+.form__buy {
+    width: 60%;
+    margin: auto;
+}
+
+.form__buy .form-group {
+    margin: 10px 0px;
 }
 
 @media (max-width: 992px) {

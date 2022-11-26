@@ -8,8 +8,9 @@ class Home extends React.Component {
     render(){
         return (
             <div className="bg-header">
-                <Header/>
                 <section className='ajust-banner'>
+                    <section className='ajust-banner-filter'>
+                    <Header/>
                     <div className='container '>
                         <div className='row'>
                             <div className='col-md-12'>
@@ -37,10 +38,17 @@ class Home extends React.Component {
                         </div>
                     </div>
                     </div>
+                    </section>
                 </section>
                 
                 <Banner/>
-                <Cards/>
+                <div className="container__navbar">
+                    <h3 className='title__section'>
+                        Destinos recomendados
+                    </h3>
+                    <Cards/>
+                </div>
+                
                 <Footer/>
             </div>
         );
