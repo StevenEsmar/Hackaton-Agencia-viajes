@@ -1,0 +1,91 @@
+:root {
+    --textoNav: #b1db27;
+  }
+
+body{
+    background-color: blue;
+    font-family: 'Lexend', sans-serif;
+}
+/* Inicio de estilos para el background del header */
+.bg-header{
+    height: 400px;
+    z-index: -2;
+    background:#3a0ca3cc;
+}
+.bg-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-image: url(http://localhost:3000/static/media/imagenFondo.e90c16add2626f0c6c99.png);
+    background-size: contain;
+    background-repeat: round;
+    z-index: -1;
+}
+/* Inicio de estilos para la barra de navegación */
+.logo-govass{
+    width: 130px;
+    margin: 15px;
+}
+.container__navbar{
+    padding: 10px;
+}
+/* .navbar-toggler{
+    margin: 10px;
+} */
+.navbar-nav{
+    font-family: 'Lexend';
+}
+.nav-link {
+    color: #ffffffc7 !important;
+}
+.nav-link:hover {
+    color: #fff !important;
+}
+.cart__style{
+    background-color: #F72585;
+    border-radius: 20px;
+    width: 44px;
+    margin: auto;
+}
+.cart__style:hover{
+    background-color: #ef1d7c;
+}
+.nav-item{
+    margin: 0px 20px;
+}
+/* Inicio de estilos para el footer */
+.footer__color{
+    background: linear-gradient(88.47deg, #3A0CA3 0%, #7209B7 64.16%, #4361EE 100%);
+}
+.content__test{
+    height: 293px;
+}
+.logo__social{
+    width: 30px;
+}
+.social__footer{
+    display: flex;
+    text-align: center;
+    list-style: none;
+    padding-left: 0px;
+}
+#LogoFooter{
+    width: 150px;
+}
+/* Inicio de estilos para el banner */
+.carousel-inner {
+    height: 260px;
+}
+@media (max-width: 992px){
+    .navbar-collapse {
+        text-align: center;
+        background: #130e1a96;
+        border-radius: 10px;
+        padding: 5px;
+        width: 200px;
+    }
+    
+}
