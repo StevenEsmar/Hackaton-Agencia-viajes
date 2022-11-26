@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../../assets/logoGovass.png';
+import Cart from '../../assets/cart.png';
 
 class Header extends React.Component {
     render(){
@@ -25,7 +26,7 @@ class Header extends React.Component {
                         </li>
                         <li className="nav-item">
                             <div className='cart__style'>
-                                <a className="nav-link " href="/carrito">Car</a>
+                                <img src={Cart} className="logo__cart" alt="Logo carrito de compras"/>
                             </div>
                         </li>
                         </ul>
