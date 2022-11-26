@@ -78,7 +78,7 @@ class Formsearch extends React.Component {
                             <img src={person} alt="banner"/>
                         </div>
                         <div className='content'>
-                            <Link className="nav-link " to="/search">Buscar</Link>
+                            <Link className="nav-link" to="/search">Buscar</Link>
                         </div>
                         
                     </div>
