@@ -2,45 +2,100 @@ import React from 'react';
 import planA from '../../assets/cartagena.jpg';
 import planB from '../../assets/suiza.png';
 import planC from '../../assets/disney.jpeg';
+import Sun from '../../assets/sun.png';
+import Moon from '../../assets/moon.png';
 
 class Cards extends React.Component {
     render(){
         return (
             <div className="container__navbar">
-                <h3>
+                <h3 className='title__section'>
                     Destinos recomendados
                 </h3>
                <div className="card-group">
-                <div className="card text-white">
-                    <img className="card-img-top" src={planB} alt="Imagen plan"/>
-                    <div className="card-body card-img-overlay">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div className="card text-white">
+                        <img className="card-img-top" src={planC} alt="Imagen plan"/>
+                        <div className="card-body card-img-overlay">
+                        <h5 className="card__tittle">Montañas de Suiza</h5>
+                        <p className="card-text">Ubicación: Suiza</p>
+                        <p className="card-text">Precio: $7'000.000</p>
+                        <div className='description__tour'>
+                            <div className='date__tour'>
+                                <p className="card__day">12</p>
+                                <div className='card__year'>
+                                    <p className="card-text">Junio</p>
+                                    <p className="card-text">2023</p>
+                                </div>
+                            </div>
+                            <div className='duration__tour'>
+                                <img className="icon__cards" src={Moon} alt="Imagen noches"/>
+                                <p className="card-text">3</p>
+                                <img className="icon__cards" src={Sun} alt="Imagen días"/>
+                                <p className="card-text">4</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div className='card__footer'>
+                            <a href="/detallePlan">
+                                <button className="button__cards">Ver detalles</button>
+                            </a>
+                        </div>
                     </div>
-                    <div className="card-footer">
-                    <small className="">Ver detalles</small>
+
+                    <div className="card text-white">
+                        <img className="card-img-top" src={planB} alt="Imagen plan"/>
+                        <div className="card-body card-img-overlay">
+                        <h5 className="card__tittle">Montañas de Suiza</h5>
+                        <p className="card-text">Ubicación: Suiza</p>
+                        <p className="card-text">Precio: $7'000.000</p>
+                        <div className='description__tour'>
+                            <div className='date__tour'>
+                                <p className="card__day">12</p>
+                                <div className='card__year'>
+                                    <p className="card-text">Junio</p>
+                                    <p className="card-text">2023</p>
+                                </div>
+                            </div>
+                            <div className='duration__tour'>
+                                <img className="icon__cards" src={Moon} alt="Imagen noches"/>
+                                <p className="card-text">3</p>
+                                <img className="icon__cards" src={Sun} alt="Imagen días"/>
+                                <p className="card-text">4</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div className='card__footer'>
+                        <button className="button__cards">Ver detalles</button>
+                        </div>
                     </div>
-                </div>
-                <div className="card">
-                    <img className="card-img-top" src={planA} alt="Imagen plan"/>
-                    <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+
+                    <div className="card text-white">
+                        <img className="card-img-top" src={planA} alt="Imagen plan"/>
+                        <div className="card-body card-img-overlay">
+                        <h5 className="card__tittle">Montañas de Suiza</h5>
+                        <p className="card-text">Ubicación: Suiza</p>
+                        <p className="card-text">Precio: $7'000.000</p>
+                        <div className='description__tour'>
+                            <div className='date__tour'>
+                                <p className="card__day">12</p>
+                                <div className='card__year'>
+                                    <p className="card-text">Junio</p>
+                                    <p className="card-text">2023</p>
+                                </div>
+                            </div>
+                            <div className='duration__tour'>
+                                <img className="icon__cards" src={Moon} alt="Imagen noches"/>
+                                <p className="card-text">3</p>
+                                <img className="icon__cards" src={Sun} alt="Imagen días"/>
+                                <p className="card-text">4</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div className='card__footer'>
+                        <button className="button__cards">Ver detalles</button>
+                        </div>
                     </div>
-                    <div className="card-footer">
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-                <div className="card">
-                    <img className="card-img-top" src={planC} alt="Imagen plan"/>
-                    <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                    <div className="card-footer">
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
+                   
                 </div>
             </div>
         );
