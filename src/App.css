@@ -1,17 +1,125 @@
 :root {
     --textoNav: #b1db27;
-  }
+}
 
-body{
+body {
     background-color: blue;
     font-family: 'Lexend', sans-serif;
 }
-/* Inicio de estilos para el background del header */
-.bg-header{
-    height: 400px;
-    z-index: -2;
-    background:#3a0ca3cc;
+
+.ajust-search .content input {
+    border: 0px;
+    color: #3A0CA3;
+    font-size: 15px;
+    font-weight: bold;
 }
+
+.ajust-search .content select {
+    border: 0px;
+    color: #3A0CA3;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ajust-search .content label {
+    margin-bottom: 10px;
+    color: #3A0CA3;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.ajust-banner {
+    background-color: #3A0CA3;
+    padding-bottom: 10px;
+}
+
+.ajust-search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #3A0CA3;
+    color: #3A0CA3;
+    border-right-color: #3A0CA3;
+    border-right-style: groove;
+}
+
+.ajust-search1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #3A0CA3;
+}
+
+.ajust-search1 .content input {
+    border: 0px;
+    color: #3A0CA3;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ajust-search .content {
+    padding: 5px;
+}
+
+.left-ajust {
+    margin-top: 50px;
+}
+
+.ajust-search1 .content a.nav-link font {
+    color: #3A0CA3 !important;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.seacrh {
+    width: 100%;
+}
+
+.seacrh .title {
+    color: #FCFBFF;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h1.content__test {
+    color: #FCFBFF;
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.content__test {
+    margin-bottom: 40px;
+}
+
+p.content__test {
+    color: #FCFBFF;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+button.content__test {
+    color: #FCFBFF;
+    font-size: 18px;
+    font-weight: 100;
+    background-color: #F72585;
+    border: 0px;
+    border-radius: 20px;
+    width: 30%;
+    padding: 10px;
+}
+
+.seacrh1 {
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+/* Inicio de estilos para el background del header */
+
 .bg-header::after {
     content: "";
     position: absolute;
@@ -24,62 +132,81 @@ body{
     background-repeat: round;
     z-index: -1;
 }
+
+
 /* Inicio de estilos para la barra de navegación */
-.logo-govass{
+
+.logo-govass {
     width: 130px;
     margin: 15px;
 }
-.container__navbar{
+
+.container__navbar {
     padding: 10px;
 }
+
+
 /* .navbar-toggler{
     margin: 10px;
 } */
-.navbar-nav{
+
+.navbar-nav {
     font-family: 'Lexend';
 }
+
 .nav-link {
     color: #ffffffc7 !important;
 }
+
 .nav-link:hover {
     color: #fff !important;
 }
-.cart__style{
+
+.cart__style {
     background-color: #F72585;
     border-radius: 20px;
     width: 44px;
     margin: auto;
 }
-.cart__style:hover{
+
+.cart__style:hover {
     background-color: #ef1d7c;
 }
-.nav-item{
+
+.nav-item {
     margin: 0px 20px;
 }
+
+
 /* Inicio de estilos para el footer */
-.footer__color{
+
+.footer__color {
     background: linear-gradient(88.47deg, #3A0CA3 0%, #7209B7 64.16%, #4361EE 100%);
 }
-.content__test{
-    height: 293px;
-}
-.logo__social{
+
+.logo__social {
     width: 30px;
 }
-.social__footer{
+
+.social__footer {
     display: flex;
     text-align: center;
     list-style: none;
     padding-left: 0px;
 }
-#LogoFooter{
+
+#LogoFooter {
     width: 150px;
 }
+
+
 /* Inicio de estilos para el banner */
+
 .carousel-inner {
     height: 260px;
 }
-@media (max-width: 992px){
+
+@media (max-width: 992px) {
     .navbar-collapse {
         text-align: center;
         background: #130e1a96;
@@ -87,5 +214,4 @@ body{
         padding: 5px;
         width: 200px;
     }
-    
 }

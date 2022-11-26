@@ -1,21 +1,20 @@
 import React from 'react';
 import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 import Banner from '../Banner/Banner';
+import Footer from '../Footer/Footer';
 import Cards from '../Cards/Cards';
-class Home extends React.Component {
+class Search extends React.Component {
     render(){
         return (
-            <div className="bg-header">
+            <div className="search bg-header">
                 <Header/>
-                <h1 className='content__test'>
-                    Hello world
-                </h1>
                 <Banner/>
-                <Cards/>
+                <div className='conatiner left-ajust'>
+                    <Cards/>
+                </div>
                 <Footer/>
             </div>
         );
     }
 }
-export default Home;
+export default Search;

@@ -1,10 +1,11 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Logo from '../../assets/logoGovass.png';
 
 class Header extends React.Component {
     render(){
         return (
-            <div className="container__navbar">
+            <div className="container__navbar footer__color">
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <img src={Logo} className="logo-govass" alt="Logo Go VASS">
                     </img>
@@ -15,17 +16,17 @@ class Header extends React.Component {
                     <div className="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <a className="nav-link " href="/">Inicio</a>
+                            <Link className="nav-link " to="/">Inicio</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="/quienesSomos">Consulta tu reserva</a>
+                            <Link className="nav-link " to="/quienesSomos">Consulta tu reserva</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="/quienesSomos">Contacto</a>
+                            <Link className="nav-link " to="/quienesSomos">Contacto</Link>
                         </li>
                         <li className="nav-item">
                             <div className='cart__style'>
-                                <a className="nav-link " href="/carrito">Car</a>
+                            <Link className="nav-link " to="/carrito">car</Link>
                             </div>
                         </li>
                         </ul>
